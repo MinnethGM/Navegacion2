@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func doTapNavegarGatos(_ sender: Any) {
+    
+    if txtTexto.text != nil && txtTexto.text != ""{
+        self.performSegue(withIdentifier: "goToGatos", sender: nil)
+        }
+    
+    }
+    @IBOutlet weak var txtTexto: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
